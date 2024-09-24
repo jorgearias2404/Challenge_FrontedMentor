@@ -2,6 +2,8 @@ const Botones = document.querySelectorAll(".Button")
 const Form = document.getElementById("Form")
 const Body_1 = document.getElementById("Body_1")
 const Body_2 = document.getElementById("Body_2")
+const Selection_Message =document.getElementById("Selection-Message")
+const Message = Selection_Message.querySelector("h3")
 // AME APRENDER A HACER ESTO
 let activeButon = null;
 let BotonValue =null;
@@ -20,6 +22,7 @@ Botones.forEach(Boton =>{
             Boton.classList.toggle("active");
             activeButon = Boton;
             BotonValue = Boton.value;
+            Message.textContent = `You selected ${BotonValue} out of 5`
         }
         
     })
@@ -38,3 +41,6 @@ Form.addEventListener('submit',(event)=>{
     }
    
 })
+
+
+   
