@@ -1,0 +1,128 @@
+:root{
+--Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--Light_Grey:#282E38;
+--Dark_Blue: #181E27;
+--Very_Dark_Blue: hsl(216, 12%, 8%);
+
+}
+body{
+    font-family: 'Overpass';
+    background-color: var(--Very_Dark_Blue);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+}
+body section{
+   background-color: var(--Dark_Blue);
+    height: 18rem;
+    width: 17rem;
+    border-radius: 25px;
+    padding: 25px; 
+    filter: blur();
+}
+body section figure{
+    display: inline-flex;
+    align-items: center;
+    height: auto;
+    background-color: var(--Light_Grey);
+     width: auto;
+    margin: 0px;
+    padding: 14px;
+    border-radius: 50%;
+   
+}
+body section figure img{
+height: 15px;
+width: 15px;
+
+}
+body section h1{
+font-weight: 700;
+margin: 0px;
+margin-top: 40px;
+ }
+ body section h1{
+    font-weight: 700;
+    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+     }
+body section p
+{
+font-weight: 400;
+margin: 0px;
+
+font-size: 12px;
+opacity: 70%;
+
+}
+body section form div {
+    display: flex;
+    justify-items: center;
+   justify-content: space-between;
+   align-items: center;
+    margin-top: 1rem;
+}
+.Button{
+    display: flex;
+    border-radius: 50%;
+   background-color: var(--Light_Grey);
+   border: none;
+   color: var(--White);
+   font-size: 15px;
+   font-weight: 700;
+   opacity: 60%;
+   height: 2.5rem;
+   width: 2.5rem;
+   padding: 0px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.Button:hover{
+    background-color: var(--White);
+    opacity: 100%;
+    color: var(--Dark_Blue);
+    transition: 0.3s;
+}
+.Button.active{
+    background-color: var(--Orange);
+    opacity: 100%;
+    color: var(--White);
+    transition: 0.3s;
+}
+.Submit-Button{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    margin-top: 30px;
+}
+.Submit-Button Button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--Orange);
+    font-weight:700 ;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.Submit-Button Button:hover{
+    background-color: var(--White);
+    opacity: 100%;
+    color: var(--Dark_Blue);
+    transition: 0.3s;
+}
+.attribution{
+    margin-top: 50px;
+}
+.attribution a{
+    text-decoration: none;
+    color: var(--Orange);
+}
