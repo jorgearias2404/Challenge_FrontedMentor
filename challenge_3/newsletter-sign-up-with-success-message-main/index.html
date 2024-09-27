@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style_2.css">
+<title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+
+</head>
+<body>
+  <!-- BODY 1 -->
+  <div id="Body_1" >
+    <section class="Container">
+      <div id="Left-Container">
+          <h1>Stay Updated!</h1>
+          <p class="Paragraph">Join 60.000+ product managers receiving
+           monthly updates on:
+          </p>
+         
+                <figure class="Subtitle">
+                 <img src="./assets/images/icon-success.svg" alt="check">
+                   <p>Product discovery and building what matters</p> 
+               </figure>
+ 
+               <figure class="Subtitle">
+                 <img src="./assets/images/icon-success.svg" alt="check">
+                   <p>Measuring to ensure updates are a succes</p> 
+               </figure>
+ 
+               <figure class="Subtitle" id="lastSubtitle">
+                 <img src="./assets/images/icon-success.svg" alt="check">
+                   <p>And much more!</p> 
+               
+                 </figure class="Subtitle">
+               <form action="/" id="Form">
+                 <div class="email-error">
+                   <label id="label" for="email">Email addres</label>
+                   <span id="Error_email" style="display: none;">Valid email required</span>
+                 </div>
+                
+                 <input type="email"  name="email" id="input_email" placeholder="email@company.com" class="last_in input">
+                 <input id="submit" type="submit" class="last_in" value="Subscribe to monthly newsletter">
+               </form>
+         
+      </div>
+           <!-- Segundo bloque -->
+      <div id="Img-Container">
+            <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+      </div>
+ 
+ 
+ </section>
+  </div>
+  <!-- BODY 2 -->
+<div id="Body_2" style="display: none;">
+  <section class="Container_2">
+    <figure>
+      <img src="./assets/images/icon-success.svg" alt="check">
+    </figure>
+    <h1>Thanks for subscribing!</h1>
+    <p>
+      A confirmation email was send to
+      <b id="user-email">email@algo.com.</b>
+      please open it and cklick the button inside to confirm your susbscription.
+    </p>
+    <button>Dismmiss message</button>
+
+  </section>
+</div>
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/jorgearias2404">Jorge Arias</a>.
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
