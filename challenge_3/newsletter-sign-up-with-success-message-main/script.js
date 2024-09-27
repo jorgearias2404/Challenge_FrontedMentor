@@ -32,9 +32,9 @@ Form.addEventListener('submit',(event)=>{
         event.preventDefault()
         Error_msg.style.display='block'
         Input_Email.style.backgroundColor = '#FFE8E6'
-          Input_Email.style.opacity = '100%'
-          Input_Email.style.borderColor = 'hsl(4, 100%, 67%)'
-          Input_Email.style.setProperty('::placeholder',{color:'red'})
+        Input_Email.style.opacity = '100%'
+        Input_Email.style.borderColor = 'hsl(4, 100%, 67%)'
+        
     }
     
    
@@ -45,4 +45,8 @@ Dissmiss_Buton.addEventListener('click',()=>{
     Body_2.style.display='none'
     Input_Email.value =''
     Valor_Input=''
+    Input_Email.style.backgroundColor = 'hsl(0, 0%, 100%)'
+    Input_Email.style.opacity = '100%'
+    Input_Email.style.borderColor = 'black'
+      Error_msg.style.display='none'
 })
