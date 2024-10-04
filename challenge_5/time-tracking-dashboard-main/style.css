@@ -209,64 +209,80 @@ transition: 0.3s;
 
 @media(max-width:375px)
 {
+  
     
    
-  .container{
-    flex-direction: column;
-    width: 100%;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-  }
-  .left_container{
-    width: 100%;
-    justify-content: center;
-  }
-  #user_id{
+    .container{
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+       
+      }
+      .left_container{
+        width: 100%;
+        justify-content: center;
+        height: auto; /* Agrega esto */
+        overflow-y: auto; /* Agrega esto */
+        max-height: none; /* Agrega esto */
+        margin-top: 20rem;
+        margin-left:2rem;
+        
+      }
+      #user_id{
+            display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+       
+      }
+      #user_id img{
+     margin-right: 1rem;
+    }
+    .button_container{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 1.5rem;
+        overflow-y: auto; /* Agrega esto */
+        max-height: 20rem; /* Agrega esto */
+    }
+    .right_container{
+        width: 100%;
+        flex-direction: column;
+        overflow-y: auto; /* Agrega esto */
+        max-height: 50rem; /* Agrega esto */
+        
+    }
+    .left_container
+    {
+        width: 35rem;
+    }
+    .top{
+        flex-direction: column;
+    }
+    .bottom{
+        flex-direction: column;
+    }
+    .sub_container{
+        width: 35rem;
+    }
+    .title-img{
+        font-size: 2rem;
+    }
+    .title-img img{
+       width: 3rem;
+    }
+    .values{
         display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-   
-  }
-  #user_id img{
- margin-right: 1rem;
-}
-.button_container{
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    font-size: 1.5rem;
-}
-.right_container{
-    width: 100%;
-    flex-direction: column;
-}
-.left_container
-{
-    width: 35rem;
-}
-.top{
-    flex-direction: column;
-}
-.bottom{
-    flex-direction: column;
-}
-.sub_container{
-    width: 35rem;
-}
-.title-img{
-    font-size: 2rem;
-}
-.title-img img{
-   width: 3rem;
-}
-.values{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.values p{
-   font-size: 2rem;
-}
-}
+        align-items: center;
+        justify-content: space-between;
+    }
+    .values p{
+       font-size: 2rem;
+    }
+    .attribution{
+       margin-bottom: 4rem;
+    }
+    }
